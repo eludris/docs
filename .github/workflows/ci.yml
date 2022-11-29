@@ -24,8 +24,18 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: install
-          args: --git https://github.com/rust-lang/mdBook
+          args: --git https://github.com/rust-lang/mdBook mdbook
 
       - run: mdbook test
 
       - run: mdbook build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './book'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
