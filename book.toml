@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "The Eludris Docs"
+description = "The place where you can find all the Eludris realated docs."
+site-url = "/docs/"
+git-repository-url = "https://github.com/eludris/book"
+edit-url-template = "https://github.com/eludris/docs/edit/main/{path}"
+
