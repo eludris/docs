@@ -22,8 +22,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: mkdir bin
-      - run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.22/mdbook-v0.4.22-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+    - name: Cache mdBook
+      id: cache-mdbook
+      uses: actions/cache@v3
+      with:
+        path: bin/mdbook
+        key: ${{ runner.os }}-mdbook
+
+      - name: Generate Prime Numbers
+        if: steps.cache-mdbook.outputs.cache-hit != 'true'
+        run: mkdir bin
+        run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.22/mdbook-v0.4.22-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+
       - run: ./bin/mdbook build
 
       - name: Setup Pages
@@ -35,3 +45,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
+      - run: echo "# Deployment succeeded" >> $GITHUB_STEP_SUMMARY
+      - run: echo "" >> $GITHUB_STEP_SUMMARY
+      - run: echo "Check it out [here](https://eludris.github.io/docs/)" >> $GITHUB_STEP_SUMMARY
