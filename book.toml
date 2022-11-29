@@ -1,0 +1,6 @@
+[book]
+authors = ["Enoki"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Eludris Docs"
