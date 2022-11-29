@@ -31,8 +31,7 @@ jobs:
 
       - name: Download mdBook
         if: steps.cache-mdbook.outputs.cache-hit != 'true'
-        run: mkdir bin
-        run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.22/mdbook-v0.4.22-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+        run: mkdir bin && curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.22/mdbook-v0.4.22-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
 
       - run: ./bin/mdbook build
 
