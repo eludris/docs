@@ -15,8 +15,8 @@ response headers.
 - Changed the websocket CLOSE frame messages.
 - The websocket connection now expects you to send a PING every 45 seconds as
 opposed to 20 seconds.
-- Switch to OPCode payloads instead of PING and PONG frames, also switched to
-using a MESSAGE OPCode for new messages, refer to the [Pandemonium docs](./api/ws/payloads.md)
+- Switch to OPCode payloads instead of `PING` and `PONG` frames, also switched to
+using a `MESSAGE_CREATE` OPCode for new messages, refer to the [Pandemonium docs](./api/ws/payloads.md)
 for more information.
 
 ### Effis API Changes
