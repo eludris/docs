@@ -22,14 +22,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-    - name: Cache mdBook
-      id: cache-mdbook
-      uses: actions/cache@v3
-      with:
-        path: bin/mdbook
-        key: ${{ runner.os }}-mdbook
+      - name: Cache mdBook
+        id: cache-mdbook
+        uses: actions/cache@v3
+        with:
+          path: bin/mdbook
+          key: ${{ runner.os }}-mdbook
 
-      - name: Generate Prime Numbers
+      - name: Download mdBook
         if: steps.cache-mdbook.outputs.cache-hit != 'true'
         run: mkdir bin
         run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.22/mdbook-v0.4.22-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
