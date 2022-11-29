@@ -8,6 +8,6 @@ description = "The place where you can find all the Eludris realated docs."
 
 [output.html]
 site-url = "/docs/"
-git-repository-url = "https://github.com/eludris/book"
+git-repository-url = "https://github.com/eludris/docs"
 edit-url-template = "https://github.com/eludris/docs/edit/main/{path}"
 
