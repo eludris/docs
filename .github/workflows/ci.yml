@@ -22,21 +22,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: actions-rs/toolchain@v1
-        with:
-          profile: minimal
-          toolchain: stable
-          override: true
-          components: rustfmt
-
-      - uses: actions-rs/cargo@v1
-        with:
-          command: install
-          args: --git https://github.com/rust-lang/mdBook mdbook
-
-      - run: mdbook test
-
-      - run: mdbook build
+      - run: mkdir bin
+      - run: curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.22/mdbook-v0.4.22-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+      - run: ./bin/mdbook build
 
       - name: Setup Pages
         uses: actions/configure-pages@v2
