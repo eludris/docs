@@ -19,6 +19,10 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
 
+    environment:
+      name: deploy
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - uses: actions/checkout@v2
 
@@ -47,4 +51,4 @@ jobs:
 
       - run: echo "# Deployment succeeded" >> $GITHUB_STEP_SUMMARY
       - run: echo "" >> $GITHUB_STEP_SUMMARY
-      - run: echo "Check it out [here](https://eludris.github.io/docs/)" >> $GITHUB_STEP_SUMMARY
+      - run: echo "Check it out [here]({{ jobs.deploy.environment.url }})" >> $GITHUB_STEP_SUMMARY
