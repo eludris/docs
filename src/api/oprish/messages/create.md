@@ -2,17 +2,15 @@
 
 <span class=requestmethod><b>POST</b></span> `/messages/`
 
-Post a message to the connected Eludris instance.
+Post a message to your Eludris instance.
 
 ## Parameters
 
 The [Message](../../models/message.md) object to be posted to the Eludris instance.
 
-
 ## Returns
 
-The Message object that was just sent.
-
+The [Message](../../models/message.md) object that was just sent.
 
 ## Errors
 
