@@ -21,5 +21,5 @@ The message contains its author and content.
 
 | Method | Endpoint
 |--------|----------------------------------------------------|
-| POST   | [`/messages/`](../oprish/messages/create.md)       |
-| GET    | [`/`](../oprish/instance_info.md)
+| GET    | [`Oprish /`](../oprish/instance_info.md)
+| POST   | [`Oprish /messages/`](../oprish/messages/create.md)       |

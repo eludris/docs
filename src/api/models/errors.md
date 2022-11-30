@@ -26,7 +26,7 @@ All error messages in Eludris come in one format as follows:
 }
 ```
 
-## RatelimitError
+## RatelimitedError
 
 The error raised when the client is ratelimited.
 

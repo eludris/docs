@@ -8,6 +8,10 @@
 ---
 # Docs
 
+- [Effis](./api/effis/effis.md)
+  - [Files](./api/effis/files.md)
+  - [Static Files](./api/effis/static_files.md)
+
 - [Oprish](./api/oprish/oprish.md)
   - [Instance Info](./api/oprish/instance_info.md)
   - [Ratelimits](./api/oprish/ratelimits.md)
@@ -18,6 +22,7 @@
 
 - [Models](./api/models/models.md)
   - [Errors](./api/models/errors.md)
+  - [Files](./api/models/files.md)
   - [Instance Info](./api/models/instance_info.md)
   - [Message](./api/models/message.md)
   - [Ratelimits](./api/models/ratelimits.md)

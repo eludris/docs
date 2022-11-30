@@ -75,4 +75,4 @@ Represents the ratelimits for Effis. These ratelimits denote how often files can
 
 | Method | Endpoint |
 |--------|----------|
-| GET    | [`/ratelimits`](../oprish/ratelimits.md) |
+| GET    | [`Oprish /ratelimits`](../oprish/ratelimits.md) |
