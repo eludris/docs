@@ -5,10 +5,10 @@
 ### Oprish API Changes
 
 - Due to ratelimits being a per instance configation thing, a new [`/ratelimits`
-route](./api/oprish/ratelimits.md) has been added besdies the already pre-existing
+route](./oprish/ratelimits.md) has been added besdies the already pre-existing
 response headers.
 - Ratelimit headers now also exist when you encounter a 429 response.
-- The [instance info](./api/oprish/instance_info.md) route now has ratelimit.
+- The [instance info](./oprish/instance_info.md) route now has ratelimit.
 
 ### Pandemonium API Changes
 
@@ -16,7 +16,7 @@ response headers.
 - The websocket connection now expects you to send a PING every 45 seconds as
 opposed to 20 seconds.
 - Switch to OPCode payloads instead of `PING` and `PONG` frames, also switched to
-using a `MESSAGE_CREATE` OPCode for new messages, refer to the [Pandemonium docs](./api/pandemonium/payloads.md)
+using a `MESSAGE_CREATE` OPCode for new messages, refer to the [Pandemonium docs](./pandemonium/payloads.md)
 for more information.
 
 ### Effis API Changes

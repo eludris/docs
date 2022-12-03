@@ -3,7 +3,7 @@
 <span class=requestmethod><b>GET</b></span> `/ratelimits`
 
 Get the ratelimit info for all of the instance's microservices, those being
-[Oprish](./oprish.md), [Pandemonium](../pandemonium/pandemonium.md) and [Effis]()
+[Oprish](./index.md), [Pandemonium](../pandemonium/index.md) and [Effis](../effis/index.md)
 
 ## Returns
 
