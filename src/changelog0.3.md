@@ -21,15 +21,17 @@ for more information.
 
 ### Effis API Changes
 
+Re-wrote the entirety of effis :D
+
+Find out more in [Effis' documentation](./effis/index.md)
+
 ## Hosting
 
 A new `Eludris.toml` file has been added which allows you to customise your instance,
 from per route ratelimit settings to the maximum message content length, all from
 the convinience of one TOML file, check out the docs page about [configuring
 your instance](./conf.md) and the [`Eludris.toml` example in the github
-repository](https://github.com/eludris/eludris/blob/next/Eludris.toml)
-
-<span style="color: red">**TODO: update the branch in the url to main after merge.**</span>
+repository](https://github.com/eludris/eludris/blob/main/ExampleEludris.toml)
 
 ### Oprish Hosting Changes
 

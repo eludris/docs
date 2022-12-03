@@ -10,9 +10,27 @@ Most of this data comes from the instance's configuration.
 
 The [InstanceInfo](../models/instance_info.md) object for the connected Eludris instance.
 
-
 ## Errors
 
 | Code | Description |
 |------|-------------|
 | 429  | [Ratelimited](../models/errors.md#ratelimiterror); too many requests were made in a given timeframe. |
+
+## Example
+
+```bash
+$ curl \
+  https://eludris.tooty.xyz
+```
+```json
+{
+  "instance_name": "eludris",
+  "description": "The *almost* official Eludris instance - ooliver.\nThis is **not** a testing instance as it is bridged to Eludis. Use your own local instance for testing.",
+  "message_limit": 2048,
+  "oprish_url": "https://api.eludris.gay",
+  "pandemonium_url": "wss://ws.eludris.gay/",
+  "effis_url": "https://cdn.eludris.gay",
+  "file_size": 20000000,
+  "attachment_file_size": 25000000
+}
+```
