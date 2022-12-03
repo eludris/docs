@@ -10,15 +10,9 @@ Most of this data comes from the instance's configuration.
 
 The [InstanceInfo](../models/instance_info.md) object for the connected Eludris instance.
 
-## Errors
-
-| Code | Description |
-|------|-------------|
-| 429  | [Ratelimited](../models/errors.md#ratelimiterror); too many requests were made in a given timeframe. |
-
 ## Example
 
-```bash
+```sh
 $ curl \
   https://eludris.tooty.xyz
 ```

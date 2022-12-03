@@ -17,7 +17,10 @@
   - [Payloads](./pandemonium/payloads.md)
 
 - [Effis](./effis/README.md)
-  - [Files](./effis/files.md)
+  - [Upload](./effis/upload.md)
+  - [Fetch](./effis/fetch.md)
+  - [Fetch Data](./effis/fetch_data.md)
+  - [Download](./effis/download.md)
   - [Static Files](./effis/static_files.md)
 
 - [Models](./models/models.md)

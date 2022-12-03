@@ -9,15 +9,9 @@ Get the ratelimit info for all of the instance's microservices, those being
 
 The [InstanceRatelimits](../models/ratelimits.md) object for the Eludris instance.
 
-## Errors
-
-| Code | Description |
-|------|-------------|
-| 429  | [Ratelimited](../models/errors.md#ratelimiterror); too many requests were made in a given timeframe.  |
-
 ## Example
 
-```bash
+```sh
 $ curl \
   https://eludris.tooty.xyz/ratelimits
 ```

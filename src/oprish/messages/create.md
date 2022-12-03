@@ -20,16 +20,9 @@ The [Message](../../models/message.md) object to be posted to the Eludris instan
 
 The [Message](../../models/message.md) object that was just sent.
 
-## Errors
-
-| Code | Description                                                    |
-|------|----------------------------------------------------------------|
-| 422  | The provided Message payload was incorrect.                    |
-| 429  | Ratelimited; too many requests were made in a given timeframe. |
-
 ## Example
 
-```bash
+```sh
 $ curl \
   --json '{"author":"Not a weeb","content":"Hello, World!"}' \
   https://eludris.tooty.xyz/messages
