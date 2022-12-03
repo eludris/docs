@@ -50,7 +50,7 @@ Represents a singular ratelimit for Effis (CDN). Unlike normal ratelimits, these
 |-----------------|--------|-------------|
 | reset_after     | Number | The number of seconds the client should wait before making new requests. |
 | limit           | Number | The number of requests that can be made within the timeframe denoted by `reset_after`. |
-| file_size_limit | String | The maximum total file size that can be requested in the timeframe denoted by `reset_after`. |
+| file_size_limit | Number | The maximum number of bytes that can be uploaded in the timeframe denoted by `reset_after`. |
 
 ### Example
 
@@ -58,7 +58,7 @@ Represents a singular ratelimit for Effis (CDN). Unlike normal ratelimits, these
 {
   "reset_after": 10,
   "limit": 5,
-  "file_size_limit": "50MB"
+  "file_size_limit": 50000000 // 50MB
 }
 ```
 

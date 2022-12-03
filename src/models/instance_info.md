@@ -10,6 +10,8 @@ Represents info about your instance.
 | oprish_url      | String  | The url to this instance's REST api.        |
 | pandemonium_url | String  | The url to this instance's gateway.         |
 | effis_url       | String  | The url to this instance's CDN.             |
+| file_size       | Number  | The maximum number of bytes for an asset.   |
+| attachment_file_size | Number  | The maximum number of bytes for an attachment. |
 
 ## Example
 
@@ -20,7 +22,9 @@ Represents info about your instance.
   "message_limit": 2048,
   "oprish_url": "https://eludris.tooty.xyz/",
   "pandemonium_url": "wss://eludris.tooty.xyz/ws/",
-  "effis_url": "https://effis.tooty.xyz/"
+  "effis_url": "https://effis.tooty.xyz/",
+  "file_size": 20000000,
+  "attachment_file_size": 25000000
 }
 ```
 
