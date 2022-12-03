@@ -18,7 +18,7 @@ Represents info about your instance.
 ```json
 {
   "instance_name": "WooChat",
-  "description": "The most Woo place to Woo", /* This field *can* be `null`, but it will always exist */
+  "description": "The most Woo place to Woo", // This field *can* be `null`, but it will always exist
   "message_limit": 2048,
   "oprish_url": "https://eludris.tooty.xyz/",
   "pandemonium_url": "wss://eludris.tooty.xyz/ws/",
