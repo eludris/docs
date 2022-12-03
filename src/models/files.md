@@ -74,7 +74,6 @@ Represents a file stored on Effis.
 | spoiler? | Boolean | Whether this file is spoiler tagged. This is not provided if false. |
 | metadata | Object  | A `FileMetadata` object containing meta-information about the file. |
 
-
 ## Example
 
 ```json
@@ -102,6 +101,6 @@ Represents a file stored on Effis.
 ## Relevant Endpoints
 
 | Method | Endpoint
-|--------|-----------------------------------------------------|
-| POST   | [`Effis /`](../effis/upload_files.md)               |
-| POST   | [`Effis /<bucket>`](../effis/upload_files.md)       |
+|--------|---------------------------------------------------------------|
+| POST   | [`Effis /`](../effis/upload.md#upload-attachment)             |
+| POST   | [`Effis /<bucket>`](../effis/upload.md#upload-file-to-bucket) |
