@@ -8,10 +8,6 @@
 ---
 # Docs
 
-- [Effis](./api/effis/effis.md)
-  - [Files](./api/effis/files.md)
-  - [Static Files](./api/effis/static_files.md)
-
 - [Oprish](./api/oprish/oprish.md)
   - [Instance Info](./api/oprish/instance_info.md)
   - [Ratelimits](./api/oprish/ratelimits.md)
@@ -19,6 +15,10 @@
 
 - [Pandemonium](./api/pandemonium/pandemonium.md)
   - [Payloads](./api/pandemonium/payloads.md)
+
+- [Effis](./api/effis/effis.md)
+  - [Files](./api/effis/files.md)
+  - [Static Files](./api/effis/static_files.md)
 
 - [Models](./api/models/models.md)
   - [Errors](./api/models/errors.md)
