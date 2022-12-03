@@ -15,6 +15,7 @@
 
 - [Pandemonium](./pandemonium/README.md)
   - [Payloads](./pandemonium/payloads.md)
+  - [Close Codes](./pandemonium/close_codes.md)
 
 - [Effis](./effis/README.md)
   - [Upload](./effis/upload.md)
