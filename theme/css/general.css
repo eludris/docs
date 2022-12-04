@@ -147,7 +147,7 @@ blockquote {
     margin: 20px 0;
     padding: 0 20px;
     color: var(--fg);
-    border-left: .5em solid var(--quote-border);
+    border-left: .5em solid var(--theme-hover);
     /* background-color: var(--quote-bg); */
     /* border-top: .1em solid var(--quote-border); */
     /* border-bottom: .1em solid var(--quote-border); */
