@@ -48,4 +48,4 @@ in `Foo?`, then that field is ommitable, meaning that it is not guaranteed to ex
 however in a case where it exists it is **guaranteed** to be an Integer.
 
 On the other hand if the question mark is next to the type like in `String?` it means
-that while the field will always be present, it's type can be a `null`.
+that while the field will always be present, its value can be a `null`.
