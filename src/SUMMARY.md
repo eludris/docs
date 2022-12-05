@@ -31,6 +31,6 @@
   - [Message](./models/message.md)
   - [Ratelimits](./models/ratelimits.md)
 
-- [Hosting your own instance]()
-  - [Configuring your instance]()
+- [Hosting your own instance](./hosting.md)
+  - [Configuring your instance](./conf.md)
 
