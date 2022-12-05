@@ -7,7 +7,7 @@ support to help you get started scoff free.
 
 ## Deploying an instance with Docker
 
-We really reccomend using [Docker](https://www.docker.com/) for production instances,
+We really recommend using [Docker](https://www.docker.com/) for production instances,
 it helps keep all the microservices and the external tools they rely on all in one
 neat group of containers without conflicting with anything else related to the host
 system, and without you having to go around install C libraries.
