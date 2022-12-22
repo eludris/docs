@@ -21,7 +21,7 @@ the same logic applies.
 ## Example
 
 ```sh
-$ curl \
+curl \
   https://effis.tooty.xyz/370617076959762069670199317/data
 ```
 ```json

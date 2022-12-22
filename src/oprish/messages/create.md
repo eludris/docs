@@ -23,7 +23,7 @@ The [Message](../../models/message.md) object that was just sent.
 ## Example
 
 ```sh
-$ curl \
+curl \
   --json '{"author":"Not a weeb","content":"Hello, World!"}' \
   https://eludris.tooty.xyz/messages
 ```

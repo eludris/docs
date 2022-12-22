@@ -33,9 +33,9 @@ the same logic applies.
 ## Example
 
 ```sh
-$ curl \
-  -F "file=@kaas.png"
-  -F "spoiler=true"
+curl \
+  -F "file=@kaas.png" \
+  -F "spoiler=true" \
   https://effis.tooty.xyz/
 ```
 ```json

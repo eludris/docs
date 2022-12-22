@@ -13,7 +13,7 @@ The [InstanceInfo](../models/instance_info.md) object for the connected Eludris 
 ## Example
 
 ```sh
-$ curl \
+curl \
   https://eludris.tooty.xyz
 ```
 ```json

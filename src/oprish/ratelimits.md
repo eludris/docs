@@ -12,7 +12,7 @@ The [InstanceRatelimits](../models/ratelimits.md) object for the Eludris instanc
 ## Example
 
 ```sh
-$ curl \
+curl \
   https://eludris.tooty.xyz/ratelimits
 ```
 ```json
