@@ -20,6 +20,7 @@ curl \
 {
   "instance_name": "eludris",
   "description": "The *almost* official Eludris instance - ooliver.\nThis is **not** a testing instance as it is bridged to Eludis. Use your own local instance for testing.",
+  "version": "0.3.1",
   "message_limit": 2048,
   "oprish_url": "https://api.eludris.gay",
   "pandemonium_url": "wss://ws.eludris.gay/",

@@ -6,6 +6,7 @@ Represents info about your instance.
 |-----------------|---------|---------------------------------------------|
 | instance_name   | String  | The name of the connected Eludris instance. |
 | description     | String? | The description of the connected Eludris instance. If provided, this must be within 1 and 2048 characters long. |
+| version         | String  | The version of the conencted Eludris instance. |
 | message_limit   | Number  | The maximum allowed message content length. |
 | oprish_url      | String  | The url to this instance's REST api.        |
 | pandemonium_url | String  | The url to this instance's gateway.         |
