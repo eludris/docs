@@ -19,16 +19,16 @@ ELUDRIS_CONF = Eludris.toml  # the path to your configuration file
 REDIS_URL = redis://127.0.0.1:6379
 DATABASE_URL = mysql://root:root@localhost:3306/eludris
 
+# Don't forget to also change the ports in the docker-compose.yml
+
 # oprish
 OPRISH_PORT = 7159
 
 # pandemonium
-GATEWAY_PORT = 7160
-GATEWAY_ADDRESS = 0.0.0.0
+PANDEMONIUM_PORT = 7160
 
 # effis
-EFFIS_PORT = 7161
-```
+EFFIS_PORT = 7161```
 
 ## `Eludris.toml`
 
