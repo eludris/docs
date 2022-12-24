@@ -3,6 +3,7 @@
 # Introduction
 
 - [What the heck is an Eludris](./README.md)
+- [v0.3.1 Changelog](./changelog0.3.1.md)
 - [v0.3 Changelog](./changelog0.3.md)
 
 ---
