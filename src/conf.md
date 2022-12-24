@@ -15,7 +15,7 @@ is required in `Eludris.toml`.
 Here's the example `.env` file found in the repository.
 
 ```sh
-ELUDRIS_CONF = Eludris.toml  # the path to your configuration file
+ELUDRIS_CONF = Eludris.toml # the path to your configuration file
 REDIS_URL = redis://127.0.0.1:6379
 DATABASE_URL = mysql://root:root@localhost:3306/eludris
 
@@ -28,7 +28,8 @@ OPRISH_PORT = 7159
 PANDEMONIUM_PORT = 7160
 
 # effis
-EFFIS_PORT = 7161```
+EFFIS_PORT = 7161
+```
 
 ## `Eludris.toml`
 

@@ -10,7 +10,7 @@ support to help you get started scoff free.
 We really recommend using [Docker](https://www.docker.com/) for production instances,
 it helps keep all the microservices and the external tools they rely on all in one
 neat group of containers without conflicting with anything else related to the host
-system, and without you having to go around install C libraries.
+system, and without you having to go around OS-dependant installing C libraries.
 
 Deploying a production-ready Eludris instance with docker is only 3 simple steps:
 
@@ -20,11 +20,11 @@ Deploying a production-ready Eludris instance with docker is only 3 simple steps
   After you have that. simply run the following command:
 
   ```sh
-  git clone https://github.com/eludris/eludris --recursive && cd eludris
+  git clone https://github.com/eludris/eludris && cd eludris
   ```
 
-  What this does is it clones the meta repository and all it's git-submodules then
-  changes your shell's current directory to the newly cloned Eludris one.
+  What this does is it clones the meta repository then changes your shell's current
+  directory to the newly cloned Eludris one.
 
 2. Configure your instance.
 
@@ -64,20 +64,14 @@ have to do:
 2. Get the latest version of `eludris/eludris`.
 
   ```sh
-  git clone https://github.com/eludris/eludris --recursive
-  cd eludris
+  git clone https://github.com/eludris/eludris && cd eludris
   ```
 
   You may also want update the submodules to use the `next` branch if you're trying
   to run a development instance or test a new feature, for that run this instead:
 
   ```sh
-  git clone https://github.com/eludris/eludris --branch=next --recursive
-  cd eludris
-  git submodule set-branch -b next oprish
-  git submodule set-branch -b next pandemonium
-  git submodule set-branch -b next effis
-  $ git submodule update --recursive --remote
+  git clone https://github.com/eludris/eludris --branch=next && cd eludris
   ```
 
 3. Configure the `Eludris.toml` file & `.env`.
@@ -95,19 +89,32 @@ have to do:
 
 5. Start the microservices.
 
+  Now what I'd recommend doing here first is building all the microservices at once,
+  to do that, just run this command:
+
   ```sh
-  cargo run --manifest-path=oprish/Cargo.toml --release
-  cargo run --manifest-path=pandemonium/Cargo.toml --release
-  cargo run --manifest-path=effis/Cargo.toml --release
+  cargo build --release
+  ```
+
+  After which you can just run these commands to start the microservices.
+
+  ```sh
+  cargo run --bin oprish --release
+  cargo run --bin pandemonium --release
+  cargo run --bin effis --release
   ```
 
   If you want faster build time for the price of slightly worse performance when
   you're for example testing, you can run the microservices in debug mode like so:
 
   ```sh
-  cargo run --manifest-path=oprish/Cargo.toml
-  cargo run --manifest-path=pandemonium/Cargo.toml
-  cargo run --manifest-path=effis/Cargo.toml
+  cargo build
+  ```
+
+  ```sh
+  cargo run --bin oprish
+  cargo run --bin pandemonium
+  cargo run --bin effis
   ```
 
   You will need to run each of these commands in it's own terminal buffer for.
