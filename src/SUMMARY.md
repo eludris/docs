@@ -11,7 +11,7 @@
 
 - [Oprish](./oprish/README.md)
   - [Instance Info](./oprish/instance_info.md)
-  - [Ratelimits](./oprish/ratelimits.md)
+  - [Rate Limits](./oprish/ratelimits.md)
   - [Create Message](./oprish/messages/create.md)
 
 - [Pandemonium](./pandemonium/README.md)
@@ -30,7 +30,7 @@
   - [Files](./models/files.md)
   - [Instance Info](./models/instance_info.md)
   - [Message](./models/message.md)
-  - [Ratelimits](./models/ratelimits.md)
+  - [Rate Limits](./models/ratelimits.md)
 
 - [Hosting your own instance](./hosting.md)
   - [Configuring your instance](./conf.md)

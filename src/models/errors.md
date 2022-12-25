@@ -26,7 +26,7 @@ All error messages in Eludris come in one format as follows:
 }
 ```
 
-## RatelimitedError
+## RateLimitedError
 
 The error raised when the client is ratelimited.
 
@@ -46,7 +46,7 @@ The error raised when the client is ratelimited.
 }
 ```
 
-## FileSizeRatelimitedError
+## FileSizeRateLimitedError
 
 The error raised when the client surpasses the maximum amount of bytes and is ratelimited.
 

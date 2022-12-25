@@ -7,7 +7,7 @@
 - Due to ratelimits being a per instance configation thing, a new [`/ratelimits`
 route](./oprish/ratelimits.md) has been added besdies the already pre-existing
 response headers.
-- Ratelimit headers now also exist when you encounter a 429 response.
+- Rate limit headers now also exist when you encounter a 429 response.
 - The [instance info](./oprish/instance_info.md) route now has ratelimit.
 
 ### Pandemonium API Changes

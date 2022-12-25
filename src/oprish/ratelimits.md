@@ -1,4 +1,4 @@
-# Ratelimits
+# Rate Limits
 
 <span class=requestmethod><b>GET</b></span> `/ratelimits`
 
@@ -7,7 +7,7 @@ Get the ratelimit info for all of the instance's microservices, those being
 
 ## Returns
 
-The [InstanceRatelimits](../models/ratelimits.md) object for the Eludris instance.
+The [InstanceRateLimits](../models/ratelimits.md) object for the Eludris instance.
 
 ## Example
 
