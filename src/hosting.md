@@ -28,7 +28,7 @@ Deploying a production-ready Eludris instance with docker is only 3 simple steps
 
 2. Configure your instance.
 
-  Now you just need to rename `.env.example` to `.env` and `ExampleEludris.toml`
+  Now you just need to rename `.env.example` to `.env` and `Eludris.example.toml`
   to `Eludris.toml` then open them in your favourite editor, besides the comments
   present in the files there is also a [page here](./conf.md) about instance configuration.
 

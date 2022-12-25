@@ -31,7 +31,7 @@ A new `Eludris.toml` file has been added which allows you to customise your inst
 from per route ratelimit settings to the maximum message content length, all from
 the convinience of one TOML file, check out the docs page about [configuring
 your instance](./conf.md) and the [`Eludris.toml` example in the github
-repository](https://github.com/eludris/eludris/blob/main/ExampleEludris.toml)
+repository](https://github.com/eludris/eludris/blob/main/Eludris.example.toml)
 
 ### Oprish Hosting Changes
 
