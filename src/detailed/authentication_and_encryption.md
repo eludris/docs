@@ -17,9 +17,15 @@ To introduce this, every user has a personal, unique, public and private key pro
 
 Events with encrypted data (message, post, etc) have an extra field in their payload, the pubkey field which contains the public key the message's content was encrypted with so that the corresponding private key would be fetched from the user's public-private key pairs and requested if the current one is invalid.
 
-As for storing public-private key pairs, storing them locally causes a lot of extra complexity especially with sharing and syncing keys and issues with a client being offline when it's given a key, so each user has a super key pair that their keys are encrypted with without the instance knowing the private key, the instance gives the user all the public and private keys (encrypted by the public key) on connecting to Pandemonium, the instance never has access to the non-encrypted key pairs at any point in time.
+As for storing public-private key pairs, storing them locally (on the client's machine) causes a lot of extra complexity, especially with sharing and syncing keys.
 
-To further increase the security each instance marks all session's (besides the first) as untrusted and essentially rats it out to everyone, a user can verify their session from their original session in which they securely pass on the super key pair to the new instance.
+For example, issues with a client being offline when it's given a key, multiple clients and so on.
+
+To combat that, Eludris' E2EE is designed so that each user has a super private-public key pair that their other private keys are encrypted with.
+
+The instance *does not know* the user's super private key, additionally the instance gives the user all the (unencrypted) public and (ecnrypted with each user's super public key) private keys on connecting to Pandemonium, the instance ***never*** gets access to the non-encrypted private keys of *any* key pair at any point in time.
+
+To further increase the security each instance marks all sessions (besides the first) as untrusted and essentially rats it out to everyone, a user can verify their session from their original session in which they securely pass on the super key pair to the new instance.
 
 #### Direct Messages
 
