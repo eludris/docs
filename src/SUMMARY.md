@@ -32,6 +32,11 @@
   - [Message](./models/message.md)
   - [Rate Limits](./models/ratelimits.md)
 
+- [Eludris Detailed]
+  - [Introduction](./detailed/introduction.md)
+  - [Authentication & Encryption](./detailed/authentication_and_encryption.md)
+  - [Federation](./detailed/federation.md)
+
 - [Hosting your own instance](./hosting.md)
   - [Configuring your instance](./conf.md)
 
