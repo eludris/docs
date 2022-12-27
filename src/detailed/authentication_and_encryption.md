@@ -31,7 +31,7 @@ To further increase the security each instance marks all sessions (besides the f
 
 This one is quite simple, upon a friend request getting accepted and two users becoming friends, the user who accepted the friend request sends a payload with a public key and a private key for the DM, both encrypted using the other user's public key.
 
-After that all messages sent in this DM is encrypted using the DM's public key and are encrypted with their private key which is stored on the instance encrypted with the each user's super public-private key pair along with their other keys.
+After that all messages sent in this DM is encrypted using the DM's public key and are decrypted with the DM's private key which is stored on the instance twice, once encrypted with the first user's super public key, and another encrypted with the second user's super public key.
 
 A user can also request they get a new key from the other end which will entirely scrap the old pair of keys and generate new ones in case the old ones get compromised.
 
