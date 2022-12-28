@@ -6,7 +6,7 @@ This is mostly sketched out from and is and extension of the old `plan.md` in ou
 
 The goal is to provide a uniquely fresh but not totally new experience focused around any topic or interest whilst having a policy of being secure, free (as in monetary value), free (as in freedom), privacy respecting, open source, and decentralized without putting users who may not have knowledge or anything to do with the aforementioned topics at an inconvenience.
 
-In addition, as with anything Eludris-related, modifying the source code or making your own clients, libraries, and tooling around Eludris us more than welcome.
+In addition, as with anything Eludris-related, modifying the source code or making your own clients, libraries, and tooling around Eludris is more than welcome.
 
 ## Takeaways
 
