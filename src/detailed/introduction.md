@@ -22,7 +22,7 @@ Both community types have shared features however, like roles, nicknames and so 
 
 Communities can be either public or private.
 
-Communities can get manually reviewed by a staff member to get verified if requested by the community's owner.
+Communities can *usually* (depends on the instance) get manually reviewed by an instance admin to get verified if requested by the community's owner.
 
 Verified communities can claim a namespace getting their own URL invite and are indexed in a list to be easily discover-able, doing that however adds more restrictions upon them however (like no End-To-End-Encryption, stricter moderation and so on).
 
