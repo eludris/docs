@@ -37,3 +37,5 @@ repository](https://github.com/eludris/eludris/blob/main/Eludris.example.toml)
 
 - The `REDIS_URL` environment variable has been introduced as a direct way to
 supply the url of your Redis/KeyDB instance as opposed to `ROCKET_DATABASES`.
+
+[PR](https://github.com/Eludris/eludris/pull/10)
