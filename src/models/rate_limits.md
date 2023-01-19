@@ -100,19 +100,21 @@ supposed to use these to properly rate limit any clients or API wrapper you make
 
 ### How To Implement Rate Limiting
 
-Ideally how rate limiting is implementing is that you check the response headers
+Ideally how rate limiting is implemented is that you check the response headers
 on every request and check if you've ran out of requests for this interval.
 
-If so you prevent any other requests on the same bucket for `Now - (X-RateLimit-Last-Reset + X=RateLimit+Reset)`
+If so, you prevent any other requests on the same bucket for `Now - (X-RateLimit-Last-Reset + X-RateLimit-Reset)`
 milliseconds.
 
-Additionally when dealing with Effis you should also check if the uploaded files
-abide by the limits of file sizes in the [InstanceInfo](./instance_info.md) payload,
-you should also keep track of how many bytes left you can send and limit requests
-to not surpass that limit.
+Additionally - when dealing with Effis - you should also check if the uploaded files
+abide by the limits of file sizes in the [InstanceInfo](./instance_info.md) payload.
+
+You should also keep track of how many more bytes you can send and limit requests
+according to that.
 
 ## Relevant Endpoints
 
 | Method | Endpoint                                          |
-| ------ | ------------------------------------------------- |
+|--------|---------------------------------------------------|
 | GET    | [`Oprish /rate_limits`](../oprish/rate_limits.md) |
+| GET    | [`Oprish /`](../oprish/instance_info.md)          |
