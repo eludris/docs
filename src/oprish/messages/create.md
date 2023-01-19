@@ -13,7 +13,7 @@ The [Message](../../models/message.md) object to be posted to the Eludris instan
 > Message authors must be between 2-32 characters long.
 >
 > Message content must be at least 1 character long. The upper changes for every
-> instance and hence should be fefched using the [instance info `/`](../instance_info.md)
+> instance and hence should be fetched using the [instance info `/`](../instance_info.md)
 > route.
 
 ## Returns
@@ -27,6 +27,7 @@ curl \
   --json '{"author":"Not a weeb","content":"Hello, World!"}' \
   https://eludris.tooty.xyz/messages
 ```
+
 ```json
 {
   "author": "Not a weeb",
