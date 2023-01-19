@@ -103,7 +103,7 @@ supposed to use these to properly rate limit any clients or API wrapper you make
 Ideally how rate limiting is implemented is that you check the response headers
 on every request and check if you've ran out of requests for this interval.
 
-If so, you prevent any other requests on the same bucket for `Now - (X-RateLimit-Last-Reset + X-RateLimit+Reset)`
+If so, you prevent any other requests on the same bucket for `Now - (X-RateLimit-Last-Reset + X-RateLimit-Reset)`
 milliseconds.
 
 Additionally - when dealing with Effis - you should also check if the uploaded files
