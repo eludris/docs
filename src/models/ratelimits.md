@@ -75,6 +75,42 @@ be requested from the CDN, as well as maximum filesize limits.
 | assets         | EffisRateLimitConf   | The ratelimit information for the handling of Assets. |
 | attachments    | EffisRateLimitConf   | The ratelimit information for the handling of Attachments. |
 
+## Headers
+
+Every request to a ratelimited route returns some ratelimit related headers, you're
+supposed to use these to properly ratelimit any clients or API wrapper you make.
+
+| Header                    | Type   | Description |
+|---------------------------|--------|-------------|
+| X-RateLimit-Reset         | Number | The reset interval length of a bucket in milliseconds. |
+| X-RateLimit-Max           | Number | The maximum number of requests that can be sent per bucket interval. |
+| x-RateLimit-Last-reset    | Number | The UNIX timestamp of the last time this bucket interval was reset in milliseconds. |
+| x-RateLimit-Request-Count | Number | The amount of requests done by the client for this bucket. |
+| <hr />                    | <hr /> | <hr />      |
+| X-RateLimit-Byte-Max      | Number | The maximium number of bytes that can be sent per bucket interval |
+| X-RateLimit-Sent-Bytes    | Number | The number of sent bytes by the client for this bucket interval. |
+
+> **Notes**
+>
+> These headers also exist on `429` responses.
+>
+> <hr />
+>
+> The UNIX timestamps here all use the actual UNIX epoch and not the Eludris one.
+
+### How To Implement Rate Limiting
+
+Ideally how rate limiting is implementing is that you check the response headers
+on every request and check if you've ran out of requests for this interval.
+
+If so you prevent any other requests on the same bucket for `Now - (X-RateLimit-Last-Reset + X=RateLimit+Reset)`
+milliseconds.
+
+Additionally when dealing with Effis you should also check if the uploaded files
+abide by the limits of file sizes in the [InstanceInfo](./instance_info.md) payload,
+you should also keep track of how many bytes left you can send and limit requests
+to not surpass that limit.
+
 ## Relevant Endpoints
 
 | Method | Endpoint |
