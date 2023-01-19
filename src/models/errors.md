@@ -2,11 +2,11 @@
 
 All error messages in Eludris come in one format as follows:
 
-| Field   | Type   | Description |
-|---------|--------|-------------|
-| status  | Number | The status code of the error. |
+| Field   | Type   | Description                         |
+| ------- | ------ | ----------------------------------- |
+| status  | Number | The status code of the error.       |
 | message | String | A message which explains the error. |
-| data?   | Object | The error's associated data. |
+| data?   | Object | The error's associated data.        |
 
 ### Example
 
@@ -19,7 +19,7 @@ All error messages in Eludris come in one format as follows:
 /* An error with data */
 {
   "status": 429,
-  "message": "You have been ratelimited",
+  "message": "You have been rate limited",
   "data": {
       "retry_after": 42069,
     }
@@ -28,10 +28,10 @@ All error messages in Eludris come in one format as follows:
 
 ## RateLimitedError
 
-The error raised when the client is ratelimited.
+The error raised when the client is rate limited.
 
-| Field       | Type   | Description |
-|-------------|--------|-------------|
+| Field       | Type   | Description                                                                   |
+| ----------- | ------ | ----------------------------------------------------------------------------- |
 | retry_after | Number | The number of milliseconds the client should wait before making new requests. |
 
 ### Example
@@ -39,32 +39,32 @@ The error raised when the client is ratelimited.
 ```json
 {
   "status": 429,
-  "message": "You have been ratelimited",
+  "message": "You have been rate limited",
   "data": {
-      "retry_after": 42069,
-    }
+    "retry_after": 42069
+  }
 }
 ```
 
 ## FileSizeRateLimitedError
 
-The error raised when the client surpasses the maximum amount of bytes and is ratelimited.
+The error raised when the client surpasses the maximum amount of bytes and is rate limited.
 
-| Field       | Type   | Description |
-|-------------|--------|-------------|
+| Field       | Type   | Description                                                                   |
+| ----------- | ------ | ----------------------------------------------------------------------------- |
 | retry_after | Number | The number of milliseconds the client should wait before making new requests. |
-| bytes_left  | Number | The number of bytes the client has available until the ratelimit resets.
+| bytes_left  | Number | The number of bytes the client has available until the rate limit resets.     |
 
 ### Example
 
 ```json
 {
-    "status": 429,
-    "message": "You have surpassed your file size limit",
-    "data": {
-        "retry_after": 42069,
-        "bytes_left": 1337
-      }
+  "status": 429,
+  "message": "You have surpassed your file size limit",
+  "data": {
+    "retry_after": 42069,
+    "bytes_left": 1337
+  }
 }
 ```
 
@@ -72,10 +72,10 @@ The error raised when the client surpasses the maximum amount of bytes and is ra
 
 The error raised when the supplied request body is invalid.
 
-| Field      | Type   | Description |
-|------------|--------|-------------|
+| Field      | Type   | Description                                  |
+| ---------- | ------ | -------------------------------------------- |
 | field_name | String | The name of the field that raised the error. |
-| error      | String | The error that occurred. |
+| error      | String | The error that occurred.                     |
 
 ### Example
 
@@ -84,9 +84,9 @@ The error raised when the supplied request body is invalid.
   "status": 422,
   "message": "Invalid request body",
   "data": {
-      "field_name": "content",
-      "error": "I disagree with your opinion"
-    }
+    "field_name": "content",
+    "error": "I disagree with your opinion"
+  }
 }
 ```
 
@@ -109,9 +109,9 @@ This error has no special data.
 
 The error raised when an internal server error occurs.
 
-| Field      | Type   | Description |
-|------------|--------|-------------|
-| error      | String | The name of the field that raised the error. |
+| Field | Type   | Description                                  |
+| ----- | ------ | -------------------------------------------- |
+| error | String | The name of the field that raised the error. |
 
 ### Example
 
@@ -120,7 +120,7 @@ The error raised when an internal server error occurs.
   "status": 500,
   "message": "The server encountered an error while performing the requested action",
   "data": {
-      "error": "Shine didn't confirm ;-;"
-    }
+    "error": "Shine didn't confirm ;-;"
+  }
 }
 ```

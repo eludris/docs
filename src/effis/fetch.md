@@ -15,5 +15,5 @@ The file with the provided id from the provided bucket. This is returned with he
 
 <span class=requestmethod><b>GET</b></span> `/<id>`
 
-This route acts as a shorthand for <span class=requestmethod><b>GET</b></span> `/atatchments/<id>`,
+This route acts as a shorthand for <span class=requestmethod><b>GET</b></span> `/attachments/<id>`,
 the same logic applies.
