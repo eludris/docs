@@ -12,10 +12,10 @@ bucket is supported.
 A `multipart/form-data` body containing the file to be uploaded and whether or not
 it should be spoiler tagged.
 
-| Field   | Type    | Description                                        | Default  |
-|---------|---------|----------------------------------------------------|----------|
-| file    | File    | The file to be uploaded.                           | Required |
-| spoiler | Boolean | Whether or not this file should be spoiler tagged. | `false`  |
+| Field    | Type    | Description                                        | Default  |
+|----------|---------|----------------------------------------------------|----------|
+| file     | File    | The file to be uploaded.                           |          |
+| spoiler? | Boolean | Whether or not this file should be spoiler tagged. | `false`  |
 
 ### Returns
 
