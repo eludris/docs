@@ -3,9 +3,17 @@ This page details how Authentication & Encryption may work for Eludris.
 
 ## The Token
 
-Eludris uses JWT tokens to authenticate users. These tokens are required for nearly every interaction. Connection to the Gateway or trying to interact with the API? You'll need a token!
-The JWT tokens used within our services use a cryptographically secure pseudo-random string with HC128 as a secret. 
+Eludris uses JWT tokens to authenticate users.
+These tokens are required for nearly every interaction.
+Trying to connect to the Gateway or interact with the API? You'll need a token!
+The JWT tokens used within our services use a cryptographically secure pseudo-random string with a randomly generated HC128 string as a secret.
+
 If you wish to get a new token send an HTTP request to `/auth` with your email and password.
+
+Tokens work on a per-session basis. What this means is that you'll have to generate a new token for every client you use.
+This is done to make it easy to invalidate any session without impacting the others.
+
+Changing your password automatically invalidates all your tokens.
 
 ## End-To-End-Encryption
 
