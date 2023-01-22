@@ -9,7 +9,18 @@ with initially starting an Eludris instance and managing it until the end of tim
 
 ## Installation
 
-TBA
+You can install the Eludris CLI in a couple of ways, mainly you can either:
+
+- Install it using [Cargo](https://crates.io/crates/eludris).
+  ```sh
+  cargo install eludris
+  ```
+- Install it from the [AUR](https://aur.archlinux.org/packages/eludris) on Arch based distros:
+   ```sh
+   <your preferred aur helper> -S eludris
+   ```
+
+You can also clone the repository and build it from source.
 
 ## Usage
 
