@@ -28,8 +28,6 @@ Communities can *usually* (depends on the instance) get manually reviewed by an 
 
 Verified communities can claim a namespace getting their own URL invite and are indexed onto list to be easily discoverable. However, doing so adds more restrictions upon them, such as no End-To-End-Encryption, stricter moderation, and so on.
 
-A community can get unverified at any point in time if they break the Eludris EULA, Terms of Service or instance rules, that however can be appealed and, unjustified unverification will (hopefully) not happen.
-
 ### Accounts are unique.
 
 Accounts for a **single** instance are unique, but when [federated](./federation#overview), this is broken.
