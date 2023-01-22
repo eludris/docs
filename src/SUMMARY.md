@@ -3,6 +3,7 @@
 # Introduction
 
 - [What the heck is an Eludris](./README.md)
+- [v0.3.2 Changelog](./changelog0.3.2.md)
 - [v0.3.1 Changelog](./changelog0.3.1.md)
 - [v0.3 Changelog](./changelog0.3.md)
 
@@ -38,4 +39,5 @@
   - [Rate Limits](./models/rate_limits.md)
 
 - [Hosting your own instance](./hosting.md)
+  - [The Eludris CLI](./cli.md)
   - [Configuring your instance](./conf.md)
