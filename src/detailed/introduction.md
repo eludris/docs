@@ -38,7 +38,7 @@ You can also gain a Reddit Karma like form of point creatively called Social Cre
 
 ### Bots are done right.
 
-Bots will be user accounts like you'd see on Reddit, or Twitter, which would mean that they wouldn't have any bot-specific API limitations, however you have to set your bot as one for it to get verified.
+Bots will be user accounts like you'd see on Reddit or Twitter. They woun't have any bot-specific API limitations, however you have to set your bot as one for it to get verified.
 
 Verification for bots only means that the bot and it's owner will be given a little neat badge of honour.
 
