@@ -42,4 +42,4 @@ Bots will be user accounts like you'd see on Reddit or Twitter. They woun't have
 
 Verification for bots only means that the bot and its owner will be given a little neat badge of honour.
 
-Discord-styled application commands will be available, however unlike Discord they will not be forced upon people and will have more utilities, uses and will be more flexible, additionally buttons and more message components will be available to give bot developers more room and tools to make cool stuff.
+Discord-styled application commands will be available. However unlike Discord they will not be forced upon people and will have more cool features, uses and will be more flexible. Additionally buttons and more message components will be available to give bot developers more room and tools to make cool stuff.
