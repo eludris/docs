@@ -31,7 +31,9 @@ For example, issues with a client being offline when it's given a key, multiple 
 
 To combat that, Eludris' E2EE is designed so that each user has a super private-public key pair that their other private keys are encrypted with.
 
-The instance *does not know* the user's super private key, additionally the instance gives the user all the (unencrypted) public and (ecnrypted with each user's super public key) private keys on connecting to Pandemonium, the instance ***never*** gets access to the non-encrypted private keys of *any* key pair at any point in time.
+The instance *does not know* the user's super private key. The instance gives the user all the (unencrypted) public and private keys (encrypted with each user's super public key) when connecting to Pandemonium.
+
+The instance ***never*** gets access to the non-encrypted private keys of *any* key pair at any point in time.
 
 To further increase the security each instance marks all sessions (besides the first) as untrusted and essentially rats it out to everyone, a user can verify their session from their original session in which they securely pass on the super key pair to the new instance.
 
