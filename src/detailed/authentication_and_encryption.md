@@ -21,9 +21,9 @@ End-To-End-Encryption (or E2EE for short) will be available to private communiti
 
 ### E2EE Implementation
 
-To introduce this, every user has a personal, unique, public and private key provided.
+First off, every user is provided a personal and unique pair of a public and private keys.
 
-Events with encrypted data (message, post, etc) have an extra field in their payload, the `pubkey` field which contains the public key the message's content was encrypted with so that the corresponding private key would be fetched from the user's public-private key pairs and requested if the current one is invalid.
+Payloads with encrypted data (message, post, etc) have an extra field in their payload, the `pubkey` field, which contains the public key the payload's content was encrypted with. This is done so that the corresponding private key could be fetched from the user's public-private key pairs and requested if the current one is invalid.
 
 As for storing public-private key pairs, storing them locally (on the client's machine) causes a lot of extra complexity, especially with sharing and syncing keys.
 
