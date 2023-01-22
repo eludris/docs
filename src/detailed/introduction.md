@@ -4,7 +4,9 @@ A detailed rundown and initial spec of how we *plan* Eludris to eventually funct
 
 ## Overview
 
-The goal is to provide a uniquely fresh but not totally new experience focused around any topic or interest whilst having a policy of being secure, free (as in monetary value), free (as in freedom), privacy respecting, open source, and decentralized without putting users who may not have knowledge or anything to do with the aforementioned topics at an inconvenience.
+The main goal with Eludris to provide a uniquely fresh but not entirely new experience. One where anyone can find (or create) a place focused around their interests while having a couple of fundemental policies that greatly improve users' experience.
+
+These policies include being secure, 100% FOSS, privacy respecting and decentralised, while also not inconveniencing users who don't understand what these things entail, but still enhancing their experience.
 
 In addition, as with anything Eludris-related, modifying the source code or making your own clients, libraries, and tooling around Eludris is more than welcome.
 
