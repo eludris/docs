@@ -17,7 +17,7 @@ Changing your password automatically invalidates all your tokens.
 
 ## End-To-End-Encryption
 
-End-To-End-Encryption (we'll be calling it E2EE for now on) will be available to private communities, private GDMs (group direct messages) and direct messages (DMs) between friends.
+End-To-End-Encryption (or E2EE for short) will be available to private communities, private GDMs (group direct messages) and direct messages (DMs) between friends.
 
 ### E2EE Implementation
 
