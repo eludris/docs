@@ -40,6 +40,6 @@ You can also gain a Reddit Karma like form of point creatively called Social Cre
 
 Bots will be user accounts like you'd see on Reddit or Twitter. They woun't have any bot-specific API limitations, however you have to set your bot as one for it to get verified.
 
-Verification for bots only means that the bot and it's owner will be given a little neat badge of honour.
+Verification for bots only means that the bot and its owner will be given a little neat badge of honour.
 
 Discord-styled application commands will be available, however unlike Discord they will not be forced upon people and will have more utilities, uses and will be more flexible, additionally buttons and more message components will be available to give bot developers more room and tools to make cool stuff.
