@@ -5,52 +5,27 @@ and as friction free as possible. To that extent Eludris has provided an [`Eludr
 where you can configure your instance as much as you wish and also official docker
 support to help you get started scoff free.
 
-## Deploying an instance with Docker
+## Deploying a Production Instance With Docker
 
 We really recommend using [Docker](https://www.docker.com/) for production instances,
 it helps keep all the microservices and the external tools they rely on all in one
 neat group of containers without conflicting with anything else related to the host
 system, and without you having to go around OS-dependant installing C libraries.
 
-Deploying a production-ready Eludris instance with docker is only 3 simple steps:
+Deploying a production-ready Eludris instance with docker is only 2 simple steps:
 
-1. Clone the [meta repository](https://github.com/eludris/eludris).
+1. Install the [Eludris CLI](./cli.md)
+  You can find more info about this in the [CLI docs](./cli.md).
 
-  This step requires you to have [Git](https://git-scm.com/) installed.
-  After you have that. simply run the following command:
+2. Run `eludris deploy`
+  This will take you through the process of setting up your own Eludris instance step-by-step
+  without you having to worry about screwing up anywhere.
 
-  ```sh
-  git clone https://github.com/eludris/eludris && cd eludris
-  ```
+And it is as simple as that.
 
-  What this does is it clones the meta repository then changes your shell's current
-  directory to the newly cloned Eludris one.
-
-2. Configure your instance.
-
-  Now you just need to rename `.env.example` to `.env` and `Eludris.example.toml`
-  to `Eludris.toml` then open them in your favourite editor, besides the comments
-  present in the files there is also a [page here](./conf.md) about instance configuration.
-
-3. Start your instance.
-
-  This step needs you to have - as you could've guessed - [Docker](https://www.docker.com/),
-  additionally it requires you to have [docker-compose](https://docs.docker.com/compose/)
-  to run all the microservices and their dependencies from one place without much
-  effort.
-
-  All you need to do is run this command:
-
-  ```sh
-  docker-compose up
-  ```
-
-  Docker should now start building all the microservices in release mode and after
-  a short while (depending on your hardware, this may take a bit) you will have a
-  functioning Eludris instance on your machine.
-
-  You can find [Oprish](./oprish/index.md) at `0.0.0.0:7159`, [Pandemonium](./pandemonium/index.md)
-  at `0.0.0.0:7160` and [Effis](./effis/index.md) at `0.0.0.0:7161`.
+If all goes right, you can find [Oprish](./oprish/index.md) at `0.0.0.0:7159`,
+[Pandemonium](./pandemonium/index.md) at `0.0.0.0:7160` and [Effis](./effis/index.md)
+at `0.0.0.0:7161`.
 
 ## Deploying on Bare Metal / Running a Development Instance
 

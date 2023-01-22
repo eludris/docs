@@ -12,10 +12,10 @@ bucket is supported.
 A `multipart/form-data` body containing the file to be uploaded and whether or not
 it should be spoiler tagged.
 
-| Field    | Type    | Description                                        | Default  |
-|----------|---------|----------------------------------------------------|----------|
-| file     | File    | The file to be uploaded.                           |          |
-| spoiler? | Boolean | Whether or not this file should be spoiler tagged. | `false`  |
+| Field    | Type    | Description                                        | Default |
+| -------- | ------- | -------------------------------------------------- | ------- |
+| file     | File    | The file to be uploaded.                           |         |
+| spoiler? | Boolean | Whether or not this file should be spoiler tagged. | `false` |
 
 ### Returns
 
@@ -27,7 +27,7 @@ id, which can then be used to fetch the file from Effis.
 
 <span class=requestmethod><b>POST</b></span> `/`
 
-This route acts as a shorthand for <span class=requestmethod><b>POST</b></span> `/atatchments/`,
+This route acts as a shorthand for <span class=requestmethod><b>POST</b></span> `/attachments/`,
 the same logic applies.
 
 ## Example
@@ -38,6 +38,7 @@ curl \
   -F "spoiler=true" \
   https://effis.tooty.xyz/
 ```
+
 ```json
 {
   "id": "370617076959762069670199317",

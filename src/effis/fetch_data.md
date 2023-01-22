@@ -15,7 +15,7 @@ provided id from the provided bucket.
 
 <span class=requestmethod><b>GET</b></span> `/<id>/data`
 
-This route acts as a shorthand for <span class=requestmethod><b>GET</b></span> `/atatchments/<id>/data`,
+This route acts as a shorthand for <span class=requestmethod><b>GET</b></span> `/attachments/<id>/data`,
 the same logic applies.
 
 ## Example
@@ -24,6 +24,7 @@ the same logic applies.
 curl \
   https://effis.tooty.xyz/370617076959762069670199317/data
 ```
+
 ```json
 {
   "id": "370617076959762069670199317",

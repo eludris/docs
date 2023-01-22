@@ -1,20 +1,21 @@
 # Rate Limits
 
-<span class=requestmethod><b>GET</b></span> `/ratelimits`
+<span class=requestmethod><b>GET</b></span> `/rate_limits`
 
-Get the ratelimit info for all of the instance's microservices, those being
+Get the rate limit info for all of the instance's microservices, those being
 [Oprish](./index.md), [Pandemonium](../pandemonium/index.md) and [Effis](../effis/index.md)
 
 ## Returns
 
-The [InstanceRateLimits](../models/ratelimits.md) object for the Eludris instance.
+The [InstanceRateLimits](../models/rate_limits.md) object for the Eludris instance.
 
 ## Example
 
 ```sh
 curl \
-  https://eludris.tooty.xyz/ratelimits
+  https://eludris.tooty.xyz/rate_limits
 ```
+
 ```json
 {
   "oprish": {
@@ -26,7 +27,7 @@ curl \
       "reset_after": 5,
       "limit": 5
     },
-    "ratelimits": {
+    "rate limits": {
       "reset_after": 5,
       "limit": 2
     }
