@@ -1,4 +1,5 @@
 # Eludris Detailed
+
 Dedicated and detailed rundown of how we *plan* Eludris to eventually function.
 This is mostly sketched out from and is and extension of the old `plan.md` in our `eludris/eludris` repository.
 
