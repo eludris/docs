@@ -31,7 +31,16 @@ For example, issues with a client being offline when it's given a key, multiple 
 
 To combat that, Eludris' E2EE is designed so that each user has a super private-public key pair that their other private keys are encrypted with.
 
-The instance *does not know* the user's super private key. The instance gives the user all the (unencrypted) public and private keys (encrypted with each user's super public key) when connecting to Pandemonium.
+The instance *does not know* the user's super private key. The instance gives the user all the unencrypted-public keys and encrypted-private keys when connecting to Pandemonium.
+
+The private keys are encrypted with the user's super public key.
+
+For example, let's say a user creates an account. They create themsevles a pair of keys, one public (A) and one private key (B).
+They give the instance their public key (A) and store the private key (B).
+
+They then join an encrypted DM and the other user generates a pair of keys for the DM, one public key (C) and one private key (D). They send the instance the M's private key (D) encrypted with the first user's public key (A), the instance stores this and gives it to the first user when requested and when they connect to pandemonium.
+
+This ensures that every user can always have their keys without any risks of the server being able to decrypt the payloads.
 
 The instance ***never*** gets access to the non-encrypted private keys of *any* key pair at any point in time.
 
