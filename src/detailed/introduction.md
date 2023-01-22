@@ -26,7 +26,7 @@ Communities can be either public or private.
 
 Communities can *usually* (depends on the instance) get manually reviewed by an instance admin to get verified if requested by the community's owner.
 
-Verified communities can claim a namespace getting their own URL invite and are indexed in a list to be easily discover-able, doing that however adds more restrictions upon them however (like no End-To-End-Encryption, stricter moderation and so on).
+Verified communities can claim a namespace getting their own URL invite and are indexed onto list to be easily discoverable. However, doing so adds more restrictions upon them, such as no End-To-End-Encryption, stricter moderation, and so on.
 
 A community can get unverified at any point in time if they break the Eludris EULA, Terms of Service or instance rules, that however can be appealed and, unjustified unverification will (hopefully) not happen.
 
