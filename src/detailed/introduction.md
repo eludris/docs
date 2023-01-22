@@ -8,7 +8,7 @@ The main goal with Eludris to provide a uniquely fresh but not entirely new expe
 
 These policies include being secure, 100% FOSS, privacy respecting and decentralised, while also not inconveniencing users who don't understand what these things entail, but still enhancing their experience.
 
-In addition, as with anything Eludris-related, modifying the source code or making your own clients, libraries, and tooling around Eludris is more than welcome.
+In addition -- and as with anything Eludris-related -- modifying the source code or making your own clients, libraries, or tooling around Eludris is more than welcome and is in fact encouraged. We have an entire [GitHub organisation](https://github.com/eludris-community) focused on this.
 
 ## Takeaways
 
