@@ -16,7 +16,7 @@ In addition -- and as with anything Eludris-related -- modifying the source code
 
 Communities can be either message-based, post-based, or both.
 
-Message-based communities work like how a Discord server does, having many different channels secluded to their own types and members can -as you can guess- create messages within channels.
+Message-based communities work like how a Discord server does, having many different channels secluded to their own types. Members can -- as you can guess -- send messages within these channels.
 
 Post-based communities work like how a Subreddit does with member being able to create different types of posts, vote on them and leave comments.
 
