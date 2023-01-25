@@ -2,7 +2,7 @@
 
 ## Upload file to bucket
 
-<span class=requestmethod><b>POST</b></span> `/<bucket>`
+<span class="request-method"><b>POST</b></span> `/<bucket>`
 
 Upload a file to Effis under a specific bucket. At the moment, only the `attachments`
 bucket is supported.
@@ -25,9 +25,9 @@ id, which can then be used to fetch the file from Effis.
 
 ## Upload attachment
 
-<span class=requestmethod><b>POST</b></span> `/`
+<span class="request-method"><b>POST</b></span> `/`
 
-This route acts as a shorthand for <span class=requestmethod><b>POST</b></span> `/attachments/`,
+This route acts as a shorthand for <span class="request-method"><b>POST</b></span> `/attachments/`,
 the same logic applies.
 
 ## Example

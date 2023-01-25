@@ -9,16 +9,16 @@ of four variants:
 
 Text metadata does not contain any special parameters.
 
-| Field  | Type   | Description                                            |
-|--------|--------|--------------------------------------------------------|
-| type   | String | The type of file as a lowercase string, always "text". |
+| Field | Type   | Description                                            |
+| ----- | ------ | ------------------------------------------------------ |
+| type  | String | The type of file as a lowercase string, always "text". |
 
 ## Image
 
 Image metadata contains the width and height of the image.
 
 | Field  | Type   | Description                                             |
-|--------|--------|---------------------------------------------------------|
+| ------ | ------ | ------------------------------------------------------- |
 | type   | String | The type of file as a lowercase string, always "image". |
 | width  | Number | The width of the image in pixels.                       |
 | height | Number | The height of the image in pixels.                      |
@@ -28,7 +28,7 @@ Image metadata contains the width and height of the image.
 Video metadata contains the width and height of the video.
 
 | Field  | Type   | Description                                             |
-|--------|--------|---------------------------------------------------------|
+| ------ | ------ | ------------------------------------------------------- |
 | type   | String | The type of file as a lowercase string, always "video". |
 | width  | Number | The width of the video in pixels.                       |
 | height | Number | The height of the video in pixels.                      |
@@ -37,9 +37,9 @@ Video metadata contains the width and height of the video.
 
 Metadata for other files only include the file type.
 
-| Field  | Type   | Description                             |
-|--------|--------|-----------------------------------------|
-| type   | String | The type of file as a lowercase string. |
+| Field | Type   | Description                             |
+| ----- | ------ | --------------------------------------- |
+| type  | String | The type of file as a lowercase string. |
 
 ## Examples
 
@@ -67,7 +67,7 @@ Metadata for other files only include the file type.
 Represents a file stored on Effis.
 
 | Field    | Type    | Description                                                         |
-|----------|---------|---------------------------------------------------------------------|
+| -------- | ------- | ------------------------------------------------------------------- |
 | id       | String  | The id of the file.                                                 |
 | name     | String  | The name of the file.                                               |
 | bucket   | String  | The bucket to which the file belongs.                               |
@@ -100,7 +100,7 @@ Represents a file stored on Effis.
 
 ## Relevant Endpoints
 
-| Method | Endpoint
-|--------|---------------------------------------------------------------|
+| Method | Endpoint                                                      |
+| ------ | ------------------------------------------------------------- |
 | POST   | [`Effis /`](../effis/upload.md#upload-attachment)             |
 | POST   | [`Effis /<bucket>`](../effis/upload.md#upload-file-to-bucket) |

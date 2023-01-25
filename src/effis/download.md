@@ -2,7 +2,7 @@
 
 ## Download file from bucket
 
-<span class=requestmethod><b>GET</b></span> `/<bucket>/<id>/download`
+<span class="request-method"><b>GET</b></span> `/<bucket>/<id>/download`
 
 Download the file with the provided id from the provided bucket.
 
@@ -13,7 +13,7 @@ The file with the provided id from the provided bucket. This is returned with he
 
 ## Download attachment
 
-<span class=requestmethod><b>GET</b></span> `/<id>/download`
+<span class="request-method"><b>GET</b></span> `/<id>/download`
 
-This route acts as a shorthand for <span class=requestmethod><b>GET</b></span> `/attachments/<id>/download`,
+This route acts as a shorthand for <span class="request-method"><b>GET</b></span> `/attachments/<id>/download`,
 the same logic applies.

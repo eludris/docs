@@ -1,6 +1,6 @@
 # Instance Info
 
-<span class=requestmethod><b>GET</b></span> `/`
+<span class="request-method"><b>GET</b></span> `/`
 
 Get information about the instance you're sending this request to.
 
@@ -16,6 +16,7 @@ The [InstanceInfo](../models/instance_info.md) object for the connected Eludris 
 curl \
   https://eludris.tooty.xyz
 ```
+
 ```json
 {
   "instance_name": "eludris",

@@ -36,6 +36,7 @@
   - [Rate Limits](./models/rate_limits.md)
 
 - [Hosting your own instance](./hosting.md)
+
   - [The Eludris CLI](./cli.md)
   - [Configuring your instance](./conf.md)
 

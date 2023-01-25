@@ -15,11 +15,11 @@ system, and without you having to go around OS-dependant installing C libraries.
 Deploying a production-ready Eludris instance with docker is only 2 simple steps:
 
 1. Install the [Eludris CLI](./cli.md)
-  You can find more info about this in the [CLI docs](./cli.md).
+   You can find more info about this in the [CLI docs](./cli.md).
 
 2. Run `eludris deploy`
-  This will take you through the process of setting up your own Eludris instance step-by-step
-  without you having to worry about screwing up anywhere.
+   This will take you through the process of setting up your own Eludris instance step-by-step
+   without you having to worry about screwing up anywhere.
 
 And it is as simple as that.
 
@@ -33,69 +33,69 @@ Now this is just a little bit more complicated, here's a quick rundown of what y
 have to do:
 
 1. Get the required dependencies
-  You will need [KeyDB](https://docs.keydb.dev/docs/download) and [MariaDB](https://mariadb.com/downloads/),
-  the latest version of both should work.
+   You will need [KeyDB](https://docs.keydb.dev/docs/download) and [MariaDB](https://mariadb.com/downloads/),
+   the latest version of both should work.
 
 2. Get the latest version of `eludris/eludris`.
 
-  ```sh
-  git clone https://github.com/eludris/eludris && cd eludris
-  ```
+```sh
+git clone https://github.com/eludris/eludris && cd eludris
+```
 
-  You may also want update the submodules to use the `next` branch if you're trying
-  to run a development instance or test a new feature, for that run this instead:
+You may also want update the submodules to use the `next` branch if you're trying
+to run a development instance or test a new feature, for that run this instead:
 
-  ```sh
-  git clone https://github.com/eludris/eludris --branch=next && cd eludris
-  ```
+```sh
+git clone https://github.com/eludris/eludris --branch=next && cd eludris
+```
 
 3. Configure the `Eludris.toml` file & `.env`.
 
-  `.env` is mostly optional thanks to somewhat sane defaults but you'll need to
-  have an `eludris` database for MariaDB and a root user with the password as root,
-  you can also just change the database URI from the `DATABASE_URL` environment variable.
+`.env` is mostly optional thanks to somewhat sane defaults but you'll need to
+have an `eludris` database for MariaDB and a root user with the password as root,
+you can also just change the database URI from the `DATABASE_URL` environment variable.
 
-  Additionally, I'd recommend throwing a `RUST_LOG="debug"` in there for debugging
-  & logging purposes.
+Additionally, I'd recommend throwing a `RUST_LOG="debug"` in there for debugging
+& logging purposes.
 
-  For more info check out the [configuration page](./conf.md) of the docs.
+For more info check out the [configuration page](./conf.md) of the docs.
 
 4. Start the dependencies.
 
 5. Start the microservices.
 
-  Now what I'd recommend doing here first is building all the microservices at once,
-  to do that, just run this command:
+Now what I'd recommend doing here first is building all the microservices at once,
+to do that, just run this command:
 
-  ```sh
-  cargo build --release
-  ```
+```sh
+cargo build --release
+```
 
-  After which you can just run these commands to start the microservices.
+After which you can just run these commands to start the microservices.
 
-  ```sh
-  cargo run --bin oprish --release
-  cargo run --bin pandemonium --release
-  cargo run --bin effis --release
-  ```
+```sh
+cargo run --bin oprish --release
+cargo run --bin pandemonium --release
+cargo run --bin effis --release
+```
 
-  If you want faster build time for the price of slightly worse performance when
-  you're for example testing, you can run the microservices in debug mode like so:
+If you want faster build time for the price of slightly worse performance when
+you're for example testing, you can run the microservices in debug mode like so:
 
-  ```sh
-  cargo build
-  ```
+```sh
+cargo build
+```
 
-  ```sh
-  cargo run --bin oprish
-  cargo run --bin pandemonium
-  cargo run --bin effis
-  ```
+```sh
+cargo run --bin oprish
+cargo run --bin pandemonium
+cargo run --bin effis
+```
 
-  You will need to run each of these commands in it's own terminal buffer for.
+You will need to run each of these commands in it's own terminal buffer for.
 
-  Depending on your hardware and whether you're building in release mode, this may
-  take a bit :D
+Depending on your hardware and whether you're building in release mode, this may
+take a bit :D
 
 Congratulations, now you're self-hosting a development instance of Eludris on bare
 metal!

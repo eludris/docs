@@ -36,7 +36,7 @@ EFFIS_PORT = 7161
 Here's the example `Eludris.toml` file found in the repository.
 
 ```toml
-# Make sure to cpoy this file into `Eludris.toml`
+# Make sure to copy this file into `Eludris.toml`
 
 # You can uncomment the sections that you want and change their config values,
 # this is just the defaults.

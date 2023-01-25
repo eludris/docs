@@ -2,7 +2,7 @@
 
 ## Fetch static file
 
-<span class=requestmethod><b>GET</b></span> `/static/<name>`
+<span class="request-method"><b>GET</b></span> `/static/<name>`
 
 Fetch the static file with the provided name. Static files are added by the instance
 owner and cannot be externally modified.
@@ -14,7 +14,7 @@ inline` set.
 
 ## Download static file
 
-<span class=requestmethod><b>GET</b></span> `/static/<name>/download`
+<span class="request-method"><b>GET</b></span> `/static/<name>/download`
 
 Download the static file with the provided name.
 
