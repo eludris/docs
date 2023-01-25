@@ -1,6 +1,6 @@
 # Create Message
 
-<span class=requestmethod><b>POST</b></span> `/messages`
+<span class="request-method"><b>POST</b></span> `/messages`
 
 Post a message to your Eludris instance.
 

@@ -1,7 +1,7 @@
 # Rate Limits
 
 Rate limits in Eludris fully depend on the instance's configuration. You can always
-get a specific instance's ratelimit info by using the [`/rate_limit`](../oprish/rate_limits.md)
+get a specific instance's rate limit info by using the [`/rate_limit`](../oprish/rate_limits.md)
 route or dynamically using response headers.
 
 ## RateLimitConf
@@ -115,6 +115,6 @@ according to that.
 ## Relevant Endpoints
 
 | Method | Endpoint                                          |
-|--------|---------------------------------------------------|
+| ------ | ------------------------------------------------- |
 | GET    | [`Oprish /rate_limits`](../oprish/rate_limits.md) |
 | GET    | [`Oprish /`](../oprish/instance_info.md)          |

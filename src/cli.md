@@ -15,10 +15,10 @@ You can install the Eludris CLI in a couple of ways, mainly you can either:
   ```sh
   cargo install eludris
   ```
-- Install it from the [AUR](https://aur.archlinux.org/packages/eludris) on Arch based distros:
-   ```sh
-   <your preferred aur helper> -S eludris
-   ```
+- Install it from the [AUR](https://aur.archlinux.org/packages/eludris) on Arch based Linux distributions:
+  ```sh
+  <your preferred aur helper> -S eludris
+  ```
 
 You can also clone the repository and build it from source.
 
@@ -45,8 +45,8 @@ a step by step process to create one at `/usr/eludris`.
 
 > **Note**
 >
-> When prompted to choose an editor ***do not*** chose VSCode or any of it's forks
-> as this command is ran as root which will really mess up your root parition.
+> When prompted to choose an editor **_do not_** chose VSCode or any of it's forks
+> as this command is ran as root which will really mess up your root partition.
 >
 > Although you can still pass in a full command to use it you have been warned.
 
@@ -105,7 +105,7 @@ database entry to prevent `500` errors.
 
 ```sh
 sudo eludris clean
-````
+```
 
 This command will remove your Eludris instance along with all the database files.
 

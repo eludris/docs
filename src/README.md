@@ -10,10 +10,10 @@
 # What the heck is an Eludris
 
 Eludris is a [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software)
-[federated](https://en.wikipedia.org/wiki/Federation_(information_technology)),
+[federated](<https://en.wikipedia.org/wiki/Federation_(information_technology)>),
 [End-To-End-Encrypted](https://en.wikipedia.org/wiki/End-to-end_encryption) Discord
-x Reddit mesh-like social media platform where the priority is for it to be *truly
-yours*.
+x Reddit mesh-like social media platform where the priority is for it to be _truly
+yours_.
 
 To that extent Eludris aims to be as easily accessible by everyone, even if they
 do not understand or care about the unique privacy-related features Eludris offers.
@@ -38,7 +38,7 @@ and Eludris related stuff.
 
 ## Reading The Docs
 
-The doccumentation is straight forward, however here are some additional clarifications
+The documentation is straight forward, however here are some additional clarifications
 oh some of the points where you can get confused.
 
 ### Ommitabillity And Nullability
@@ -47,7 +47,7 @@ While reading the docs you might notice the use of the question marks next to fi
 names or types, here's an example of that.
 
 | Field | Type    |
-|-------|---------|
+| ----- | ------- |
 | Foo?  | Integer |
 | Bar   | String? |
 

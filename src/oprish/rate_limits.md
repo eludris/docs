@@ -1,6 +1,6 @@
 # Rate Limits
 
-<span class=requestmethod><b>GET</b></span> `/rate_limits`
+<span class="request-method"><b>GET</b></span> `/rate_limits`
 
 Get the rate limit info for all of the instance's microservices, those being
 [Oprish](./index.md), [Pandemonium](../pandemonium/index.md) and [Effis](../effis/index.md)

@@ -1,6 +1,6 @@
 # Version 0.3.2 Changes
 
-This version addresses some issuese related to deploying production-ready instances
+This version addresses some issues related to deploying production-ready instances
 of Eludris by providing pre-built docker images and a simple CLI.
 
 ## API changes

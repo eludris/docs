@@ -1,10 +1,10 @@
 # Version 0.3.1 Changes
 
 This version mainly tries to address some developer-side frustrations with Eludris,
-namely issues with having to make a branches in atleast 2 repositories, make 2 pull
+namely issues with having to make a branches in at least 2 repositories, make 2 pull
 requests, merge the pull requests, update lockfiles, making a meta-repository branch
 update the meta-repository's submodules, making a pull request then merging that
-for *every single change*, also issues with syncing up versions.
+for _every single change_, also issues with syncing up versions.
 
 Additionally Docker deployments have been greatly enhanced thanks to buildx powered
 caching and much more (thanks @ooliver1).

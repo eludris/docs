@@ -539,7 +539,7 @@ ul#searchresults span.teaser em {
 
 /* Custom shit */
 
-.requestmethod {
+.request-method {
     background-color: var(--sidebar-bg);
     padding: 2px 5px;
     border-radius: 5px;
