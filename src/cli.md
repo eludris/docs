@@ -11,6 +11,7 @@ with initially starting an Eludris instance and managing it until the end of tim
 
 You can install the Eludris CLI in a couple of ways, mainly you can either:
 
+- Install it from the [releases page](https://github.com/eludris/eludris/releases/tag/v0.3.2).
 - Install it using [Cargo](https://crates.io/crates/eludris).
   ```sh
   cargo install eludris
