@@ -36,13 +36,16 @@ Here's a list of the commands the Eludris CLI has along with a few extra notes.
 ### Deploy
 
 ```sh
-sudo eludris deploy
+sudo eludris deploy [--next]
 ```
 
 This command will start up your Eludris instance using our pre-built Docker images.
 
 Additionally if no instance is already found on your machine it will take you on
 a step by step process to create one at `/usr/eludris`.
+
+Using the `--next` flag will make you use the latest development version of Eludris
+for your instance instead.
 
 > **Note**
 >
@@ -59,6 +62,17 @@ sudo eludris stop
 
 This command will stop all the microservices in your instance along with all the
 other databases and such.
+
+### Update
+
+```sh
+sudo eludris update [--next]
+```
+
+This command will update your instance's version of Eludris to the latest available
+version on GitHub.
+
+Using the `--next` flag makes you update to the latest development version of ELudris.
 
 ### Logs
 
