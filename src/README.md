@@ -19,7 +19,7 @@ To that extent Eludris aims to be as easily accessible by everyone, even if they
 do not understand or care about the unique privacy-related features Eludris offers.
 
 In terms of client Eludris is currently officially providing [Pilfer](https://github.com/eludris/pilfer)
-(a lightweight TUI) and is working on a web based cross-platform web client.
+(a lightweight TUI) and [Pengin](https://github.com/eludris/pengin) (a web-based cross-platform client).
 
 However the intent has always been and still remains to be for people to make their
 own clients, toolings, bots, API wrappers and so on.
