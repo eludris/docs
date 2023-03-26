@@ -41,7 +41,7 @@ and Eludris related stuff.
 The documentation is straight forward, however here are some additional clarifications
 oh some of the points where you can get confused.
 
-### Ommitabillity And Nullability
+### Omittability And Nullability
 
 While reading the docs you might notice the use of the question marks next to field
 names or types, here's an example of that.
@@ -53,7 +53,7 @@ names or types, here's an example of that.
 
 Now, you may be wondering what these question marks are going there, it depends
 on where the question mark is, if the question mark is next to the field name like
-in `Foo?`, then that field is ommitable, meaning that it is not guaranteed to exist,
+in `Foo?`, then that field is omittable, meaning that it is not guaranteed to exist,
 however in a case where it exists it is **guaranteed** to be an Integer.
 
 On the other hand if the question mark is next to the type like in `String?` it means
