@@ -29,9 +29,9 @@ individual rate limit information for Oprish (REST-api), Pandemonium (Gateway), 
 
 | Field       | Type                                        | Description                                                              |
 | ----------- | ------------------------------------------- | ------------------------------------------------------------------------ |
-| oprish      | [OprishRateLimits](./oprish_rate limits.md) | The rate limits that apply to the connected Eludris instance's REST api. |
+| oprish      | [OprishRateLimits](./oprish_rate_limits.md) | The rate limits that apply to the connected Eludris instance's REST api. |
 | pandemonium | RateLimitConf                               | The rate limits that apply to the connected Eludris instance's gateway.  |
-| effis       | [EffisRateLimits](./effis_rate limits.md)   | The rate limits that apply to the connected Eludris instance's CDN.      |
+| effis       | [EffisRateLimits](./effis_rate_limits.md)   | The rate limits that apply to the connected Eludris instance's CDN.      |
 
 ## OprishRateLimits
 
